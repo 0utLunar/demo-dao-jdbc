@@ -1,14 +1,16 @@
-# Demo DAO JDBC
-
-![Java](https://img.shields.io/badge/Java-25-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-4-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![JDBC](https://img.shields.io/badge/JDBC-yes-silver?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+# 🗄️ Demo DAO JDBC
 
 Aplicação Java que implementa o padrão **DAO** (Data Access Object) com **JDBC** e **MySQL**, desenvolvida durante a seção de JDBC do curso [*Java COMPLETO: Programação Orientada a Objetos + Projetos*](https://www.udemy.com/course/java-curso-completo/) do Prof. Nélio Alves.
 
-## Funcionalidades
+_Java application implementing the **DAO** (Data Access Object) pattern with **JDBC** and **MySQL**, built during the JDBC section of Nélio Alves' course._
+
+[![Java](https://img.shields.io/badge/Java-25-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://adoptium.net/)
+[![Maven](https://img.shields.io/badge/Maven-4-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)](https://maven.apache.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+![Status](https://img.shields.io/badge/status-educational-informational?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-brightgreen?style=for-the-badge)
+
+## ✨ Funcionalidades — _Features_
 
 CRUD completo para as entidades `Seller` e `Department`:
 
@@ -23,7 +25,7 @@ CRUD completo para as entidades `Seller` e `Department`:
 
 Os programas `Program` (Seller) e `Program2` (Department) executam uma bateria de testes exercitando cada operação. O teste de `deleteById` pede um id pelo console.
 
-## Técnicas e conceitos
+## 🧠 Técnicas e conceitos — _Techniques and concepts_
 
 - Padrão **DAO** com interfaces e implementações separadas
 - **JDBC** com `DriverManager` e `PreparedStatement` (proteção contra SQL injection)
@@ -32,7 +34,7 @@ Os programas `Program` (Seller) e `Program2` (Department) executam uma bateria d
 - Conexão única reutilizada via classe utilitária `DB`
 - Exceções customizadas: `DbException` e `DbIntegrityException`
 
-## Estrutura do projeto
+## 📁 Estrutura do projeto — _Project structure_
 
 ```
 demo-dao-jdbc/
@@ -59,13 +61,13 @@ demo-dao-jdbc/
             └── Department.java
 ```
 
-## Pré-requisitos
+## 📋 Pré-requisitos — _Prerequisites_
 
 - JDK 25+
 - Maven
 - MySQL Server instalado e rodando na porta `3306`
 
-## Configuração do banco
+## 🗄️ Configuração do banco — _Database setup_
 
 1. Crie o schema `coursejdbc` e execute o script abaixo:
 
@@ -114,14 +116,18 @@ cp db.properties.example db.properties
 
 Edite o `db.properties` com seu usuário e senha do MySQL.
 
-## Como executar
+## 🚀 Como executar — _How to run_
 
 Rode a classe `application.Program` (teste de `Seller`) ou `application.Program2` (teste de `Department`) pela sua IDE de preferência.
 
-## Créditos
+## 🙏 Créditos — _Credits_
 
 Projeto didático desenvolvido como exercício da seção de **JDBC** do curso *Java COMPLETO: Programação Orientada a Objetos + Projetos* do **Prof. Nélio Alves** (DevSuperior).
 
-## Licença
+## 📄 Licença — _License_
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+[MIT](./LICENSE) — Copyright (c) 2026 0utLunar
+
+_Distributed under the MIT license. See `LICENSE` for details._
+
+_MIT — Copyright (c) 2026 0utLunar_
